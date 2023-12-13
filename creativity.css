@@ -1,0 +1,85 @@
+body {
+  background-color: rgb(123, 139, 111);
+  color: white;
+  margin-left: 0em;
+}
+
+figure p {
+  border-radius: 1em;
+
+  border: 0.1em solid white;
+  padding: 0.5em;
+}
+
+nav {
+  background-color: rgb(123, 139, 111);
+  position: fixed;
+  width: 100%;
+  top: 0em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: rgb(123, 139, 111);
+}
+
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  max-width: 200%;
+}
+
+.dropdown-content a {
+  color: rgb(123, 139, 111);
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+footer {
+  margin: 2em;
+}
+
+@media screen and (min-width: 320px) {
+  main {
+    margin-top: 2em;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  figure {
+    max-width: 296px;
+    margin: 5%;
+    padding: 0em;
+  }
+}
