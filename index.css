@@ -1,0 +1,382 @@
+body.index {
+  margin: 0em;
+  background-color: rgb(123, 139, 111);
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  color: white;
+  grid-template-areas:
+    "top top "
+    "mid-left mid-right"
+    "bottom bottom ";
+}
+h2{
+  color:white;
+}
+p{
+  color:white;
+}
+h3{
+ margin:0.5em;
+}
+h4{
+  margin:0.5em
+}
+ul{
+  margin:0em;
+}
+a{
+  text-decoration: none;
+  color:white;
+}
+header.index {
+  grid-area: top;
+}
+
+section.introduction {
+  grid-area: mid-left;
+  display: flex;
+  padding: 1em;
+  padding-top:0em;
+  padding-bottom:0em;
+  flex-direction: column;
+margin-left:1em;
+margin-top:3em;
+  border-radius: 1em;
+  border:0.1em solid white;
+
+}
+li{
+  margin-left: 0em;
+}
+section.introduction p {
+  flex-wrap: wrap;
+}
+
+main.index {
+  grid-area: mid-right;
+
+  padding: 1.5em;
+}
+
+section.index {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+main img {
+  max-width: 200px;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("img/img.jpeg");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin-top: 230px;
+  margin-left: 3%;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  border-radius: 0.5em;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* yoga page */
+body.yoga {
+  background-color: rgb(123, 139, 111);
+  opacity: 80%;
+  margin: 0em;
+}
+
+img.yoga {
+  max-width: 100%;
+}
+
+/* love learned from: https://anobjectisa.com/?p=335 */
+:root {
+  --card_width: 250px;
+  --row_increment: 10px;
+  --card_border_radius: 16px;
+  --card_mini: 16;
+  --card_small: 25;
+  --card_medium: 30;
+  --card_large: 32;
+}
+
+.love {
+  top: 0em;
+  margin: 0;
+  padding: 0;
+  padding-top: 0em;
+  background-color: rgb(123, 139, 111);
+  display: flex;
+}
+
+.pin_container {
+  margin-top: 2em;
+  padding-top: 0em;
+  border-top: 0em;
+  width: 80vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--card_width));
+  grid-auto-rows: var(--row_increment);
+  justify-content: center;
+  background-color: rgb(123, 139, 111);
+}
+
+.card {
+  padding: 0em;
+  margin-top: 0em;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  border-radius: var(--card_border_radius);
+  background-color: white;
+}
+
+.card_mini {
+  padding: 0em;
+  grid-row-end: span var(--card_mini);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.card_small {
+  padding: 0em;
+  grid-row-end: span var(--card_small);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.card_medium {
+  padding: 0em;
+  grid-row-end: span var(--card_medium);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.card_large {
+  grid-row-end: span var(--card_large); 
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#mini1{
+  background-image: url("img/dance2.JPG");
+  background-repeat: no-repeat;
+
+}
+#mini2{
+  background-image: url("img/cooking2.JPG");
+
+}
+#mini3{
+  background-image: url("img/watercolor2.jpeg");
+
+
+}
+#small1{
+  background-image: url("img/bird2.jpeg");
+}
+#small2{
+  background-image: url("img/bird.jpg");
+}
+#small3{
+  background-image: url("img/cooking3.JPG");
+  margin-bottom:6em;
+}
+
+#medium1{
+  background-image: url("img/Watercolor1.jpeg");
+}
+#medium2{
+  background-image: url("img/cooking1.jpg");
+}
+#medium3{
+  background-image: url("img/watercolor5.jpeg");
+}
+#large1{
+  background-image: url("img/watercolor3.jpeg");
+}
+#large2{
+  background-image: url("img/dance1.jpg");
+}
+#large3{
+  background-image: url("img/bird3.jpg");
+}
+
+nav.fixnav {
+  border-radius: 0%;
+  background-color: rgb(123, 139, 111);
+  position: fixed;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.fixnav a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.fixnav a:hover {
+  background-color: #ddd;
+  color: rgb(123, 139, 111);
+}
+
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  max-width: 200%;
+}
+
+.dropdown-content a {
+  color: rgb(123, 139, 111);
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+footer {
+  grid-area: bottom;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-left: 1.5em;
+  padding-right: 0.5em;
+  padding-top: 0em;
+  bottom: 10em;
+  text-decoration: none;
+  color: white;
+}
+
+.display-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(123, 139, 111);
+  color: white;
+  text-align: center;
+}
+
+
+
+
+section.yoga_video{
+  margin:0.3em;
+}
+
+
+table,th,td{
+  border:0.1em solid white;
+  margin-left: auto;
+  margin-right: auto;
+  color:white;
+  border-collapse: collapse;
+  text-align: center;
+}
+  
+section.yoga_description{
+  display:flex;
+  flex-wrap: wrap;
+}
+section.yoga_text{
+  border:0.1em solid white;
+  border-radius: 1em;
+  margin:0.3em;
+  padding:0.5em;}
+
+@media screen and (min-width:360px ){
+  .yoga_video iframe{
+    width:320px;
+    height:180px;
+  }
+  section.yoga_text{
+   width:90%
+  }
+  
+}
+@media screen and (min-width:900px ){
+  .yoga_video iframe{
+    width:640px;
+    height:360px;
+  }
+  section.yoga_text{
+    width:30%
+   }
+}
+
+/*  creativity  */
+@media screen and (min-width:320px) {
+    main.creativity {
+        margin-top: 2em;
+    }
+
+    img.creativity {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:600px) {
+
+    section.creativity {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    figure.creativity {
+        max-width: 296px;
+        margin: 5%;
+        padding: 0em;
+    }
+}
+
+
+
